@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contact | FILEX TRONICS</title>
+<meta name="theme-color" content="#07070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Talk to <span class="gold-text">FILEX TRONICS</span></h1>
+      <p class="lead">Message us on WhatsApp, follow us on Instagram, sign in to save your details, or visit us in Kariakoo.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap contact-grid">
+      <div class="col">
+
+        <article class="c-card" id="whatsapp">
+          <span class="eyebrow">WhatsApp</span>
+          <h2>The fastest way to order</h2>
+          <p>Check stock, confirm a price or place an order.</p>
+          <div class="big" id="waNum"></div>
+          <div class="row">
+            <a class="btn wa" id="waOpen" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+            <button class="btn" id="copyNum" type="button">Copy number</button>
+          </div>
+        </article>
+
+        <article class="c-card" id="instagram">
+          <span class="eyebrow">Instagram</span>
+          <h2>New arrivals and offers</h2>
+          <p>Follow us to see new stock first.</p>
+          <div class="big" id="igHandle"></div>
+          <div class="row"><a class="btn gold" id="igOpen" href="#" target="_blank" rel="noopener">Open Instagram</a></div>
+        </article>
+
+        <article class="c-card" id="login">
+          <span class="eyebrow">Customer sign-in</span>
+          <h2>Save your details</h2>
+          <p>Sign in with your name and phone number. They are saved on this device only and fill in your WhatsApp orders for you.</p>
+          <form id="loginForm" novalidate>
+            <label for="lName">Full name<input id="lName" type="text" placeholder="e.g. Amina Juma" autocomplete="name" maxlength="60"></label>
+            <label for="lPhone">Phone number<input id="lPhone" type="tel" placeholder="+255 7XX XXX XXX" autocomplete="tel" maxlength="20"></label>
+            <div class="err" id="lErr" role="alert"></div>
+            <button class="btn gold" type="submit">Sign in</button>
+          </form>
+          <div class="signed" id="signed" hidden>
+            <span class="eyebrow">Signed in</span>
+            <b id="sName"></b>
+            <span id="sPhone" style="font-family:var(--font-mono);color:var(--gold-hi)"></span>
+            <div class="row"><button class="btn sm" id="signOut" type="button">Sign out</button><a class="btn gold sm" href="shop.html">Go to the shop</a></div>
+          </div>
+        </article>
+
+      </div>
+
+      <article class="c-card map-card" id="location">
+        <div class="map-top">
+          <span class="eyebrow">Location</span>
+          <h2 id="locTitle"></h2>
+          <p id="locAddr"></p>
+        </div>
+        <iframe class="map-frame" id="mapFrame" title="Map of Kariakoo, Dar es Salaam" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-bottom">
+          <div class="row" style="margin-top:0">
+            <a class="btn gold" id="mapOpen" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+            <a class="btn" id="mapDir" href="#" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/config.js"></script>
+<script src="js/art.js"></script>
+<script src="js/common.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

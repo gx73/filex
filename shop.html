@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Shop | FILEX TRONICS</title>
+<meta name="theme-color" content="#07070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">The collection</span>
+      <h1>Find your next <span class="gold-text">device</span></h1>
+      <p class="lead">iPhones, Android phones, electronics and accessories. Search, filter and send your order to WhatsApp in one tap.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="controls">
+        <div class="search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <label class="sr" for="q">Search products</label>
+          <input id="q" type="text" placeholder="Search iPhone 16, Samsung, AirPods..." autocomplete="off">
+        </div>
+        <label class="sr" for="sort">Sort products</label>
+        <select id="sort">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="name">Name A to Z</option>
+        </select>
+      </div>
+      <div class="cats" id="cats" role="group" aria-label="Categories"></div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <p class="note">Prices are sample TZS prices that you can edit in js/config.js. Availability is confirmed with you on WhatsApp.</p>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/config.js"></script>
+<script src="js/art.js"></script>
+<script src="js/common.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
